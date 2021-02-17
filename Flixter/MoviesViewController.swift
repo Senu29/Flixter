@@ -22,7 +22,7 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         tableView.delegate = self
 
         // Do any additional setup after loading the view.
-        print("Hello")
+        //print("Hello")
         
         let url = URL(string: "https://api.themoviedb.org/3/movie/now_playing?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed")!
         let request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
@@ -38,7 +38,7 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
             
             self.tableView.reloadData() //this will recall the downloaded data to refresh the varibles (moive count)
             
-            print(dataDictionary)
+            //print(dataDictionary)
 
               // TODO: Get the array of movies
               // TODO: Store the movies in a property to use elsewhere
